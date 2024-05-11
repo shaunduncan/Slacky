@@ -18,12 +18,23 @@ linux:
   category: Network
   synopsis: SlackArm
   target:
-    - target: AppImage
+    # - target: AppImage
+    #   arch:
+    #     - arm64
+    # - target: flatpak
+    #   arch:
+    #     - arm64
+    # - target: rpm
+    #   arch:
+    #     - arm64
+    - target: tar.gz
       arch:
         - arm64
-    - target: flatpak
-      arch:
-        - arm64
+      icon: icons/icon.png
+      desktop:
+        Type: Application
+        Name: Slack
+        Terminal: "false"
 flatpak:
   runtimeVersion: 23.08
   baseVersion: 23.08 
